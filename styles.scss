@@ -1,0 +1,197 @@
+//FONTS
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+$tittle-font: "Big Shoulders Display", cursive;
+
+$p-button: "Lexend Deca", sans-serif;
+
+//Primary colors
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+
+//Neutral colors
+//(paragraphs)
+$Transparent-white: hsla(0, 0%, 100%, 0.75);
+//(background, headings, buttons)
+$Very-light-gray: hsl(0, 0%, 95%);
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(1, 33em);
+  grid-template-rows: repeat(3, 44.5em);
+  grid-auto-flow: column;
+  margin: 3.5em;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4.5em;
+  &__image {
+    width: 7em;
+    min-height: 4em;
+  }
+  &__button {
+    width: 15em;
+    min-height: 5em;
+    border-radius: 2.5em;
+    background-color: $Transparent-white;
+    border: 0.2rem solid $Transparent-white;
+    &--span {
+      font-size: 1.5rem;
+      font-family: $p-button;
+    }
+  }
+  &__p {
+    font-size: 1.5rem;
+    font-family: $p-button;
+    color: $Transparent-white;
+  }
+  &__title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: $tittle-font;
+    color: $Transparent-white;
+  }
+}
+
+.sedan {
+  background-color: $Bright-orange;
+  &__button {
+    &--span {
+      color: $Bright-orange;
+    }
+  }
+}
+.suv {
+  background-color: $Dark-cyan;
+  &__button {
+    &--span {
+      color: $Dark-cyan;
+    }
+  }
+}
+
+.luxury {
+  background-color: $Very-dark-cyan;
+  &__button {
+    &--span {
+      color: $Very-dark-cyan;
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    justify-content: center;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, 30.1em);
+    grid-template-rows: 50em;
+    grid-auto-flow: row;
+  }
+
+  .section {
+    &__title {
+      margin: -5.5rem 0 -5.5rem 0;
+    }
+    &__button:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.sedan__button:hover {
+  background-color: $Bright-orange;
+}
+.sedan__button:hover .sedan__button--span {
+  color: aliceblue;
+}
+
+.suv__button:hover {
+  background-color: $Dark-cyan;
+}
+.suv__button:hover .suv__button--span {
+  color: $Transparent-white;
+}
+
+.luxury__button:hover {
+  background-color: $Very-dark-cyan;
+}
+.luxury__button:hover .luxury__button--span {
+  color: $Transparent-white;
+}

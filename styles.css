@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(1, 33em);
+  grid-template-rows: repeat(3, 44.5em);
+  grid-auto-flow: column;
+  margin: 3.5em;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4.5em;
+}
+.section__image {
+  width: 7em;
+  min-height: 4em;
+}
+.section__button {
+  width: 15em;
+  min-height: 5em;
+  border-radius: 2.5em;
+  background-color: hsla(0deg, 0%, 100%, 0.75);
+  border: 0.2rem solid hsla(0deg, 0%, 100%, 0.75);
+}
+.section__button--span {
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+.section__p {
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.section__title {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.sedan {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.sedan__button--span {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.suv__button--span {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.luxury__button--span {
+  color: hsl(179deg, 100%, 13%);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    justify-content: center;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(3, 30.1em);
+    grid-template-rows: 50em;
+    grid-auto-flow: row;
+  }
+  .section__title {
+    margin: -5.5rem 0 -5.5rem 0;
+  }
+  .section__button:hover {
+    cursor: pointer;
+  }
+}
+.sedan__button:hover {
+  background-color: hsl(31deg, 77%, 52%);
+}
+
+.sedan__button:hover .sedan__button--span {
+  color: aliceblue;
+}
+
+.suv__button:hover {
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.suv__button:hover .suv__button--span {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+.luxury__button:hover {
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+.luxury__button:hover .luxury__button--span {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+
+/*# sourceMappingURL=styles.css.map */

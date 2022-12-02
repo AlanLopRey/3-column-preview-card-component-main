@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
       type="image/png"
@@ -28,37 +28,55 @@
   <body>
     <main class="main">
       <section class="section sedan">
-        <img src="images/icon-sedans.svg" alt="sedan's icon" />
+        <img
+          class="section__image"
+          src="images/icon-sedans.svg"
+          alt="sedan's icon"
+        />
         <h1 class="section__title">Sedans</h1>
         <p class="section__p">
           Choose a sedan for its affordability and excellent fuel economy. Ideal
           for cruising in the city or on your next road trip.
         </p>
+        <button class="section__button sedan__button">
+          <span class="section__button--span sedan__button--span"
+            >Learn more</span
+          >
+        </button>
       </section>
-      <button class="section__button">
-        <span class="section__button--span">Learn more</span>
-      </button>
       <section class="section suv">
-        <img src="images/icon-suvs.svg" alt="suv's icon" />
+        <img
+          class="section__image"
+          src="images/icon-suvs.svg"
+          alt="suv's icon"
+        />
         <h1 class="section__title">SUVs</h1>
         <p class="section__p">
           Take an SUV for its spacious interior, power, and versatility. Perfect
           for your next family vacation and off-road adventures.
         </p>
-        <button class="section__button">
-          <span class="section__button--span">Learn more</span>
+        <button class="section__button suv__button">
+          <span class="section__button--span suv__button--span"
+            >Learn more</span
+          >
         </button>
       </section>
 
       <section class="section luxury">
-        <img src="images/icon-luxury.svg" alt="luxury's icon" />
+        <img
+          class="section__image"
+          src="images/icon-luxury.svg"
+          alt="luxury's icon"
+        />
         <h1 class="section__title">Luxury</h1>
         <p class="section__p">
           Cruise in the best car brands without the bloated prices. Enjoy the
           enhanced comfort of a luxury rental and arrive in style.
         </p>
-        <button class="section__button">
-          <span class="section__button--span">Learn more</span>
+        <button class="section__button luxury__button">
+          <span class="section__button--span luxury__button--span"
+            >Learn more</span
+          >
         </button>
       </section>
     </main>
