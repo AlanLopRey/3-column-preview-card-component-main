@@ -83,6 +83,7 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
+  background-color: $Very-light-gray;
 }
 
 .main {
@@ -108,8 +109,8 @@ body {
     width: 15em;
     min-height: 5em;
     border-radius: 2.5em;
-    background-color: $Transparent-white;
-    border: 0.2rem solid $Transparent-white;
+    background-color: $Very-light-gray;
+    border: 0.2rem solid $Very-light-gray;
     &--span {
       font-size: 1.5rem;
       font-family: $p-button;
@@ -124,7 +125,7 @@ body {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-family: $tittle-font;
-    color: $Transparent-white;
+    color: $Very-light-gray;
   }
 }
 
@@ -179,19 +180,19 @@ body {
   background-color: $Bright-orange;
 }
 .sedan__button:hover .sedan__button--span {
-  color: aliceblue;
+  color: $Very-light-gray;
 }
 
 .suv__button:hover {
   background-color: $Dark-cyan;
 }
 .suv__button:hover .suv__button--span {
-  color: $Transparent-white;
+  color: $Very-light-gray;
 }
 
 .luxury__button:hover {
   background-color: $Very-dark-cyan;
 }
 .luxury__button:hover .luxury__button--span {
-  color: $Transparent-white;
+  color: $Very-light-gray;
 }
